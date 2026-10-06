@@ -1,0 +1,202 @@
+{
+  "index_only": false,
+  "forced": true,
+  "only_source": "class2",
+  "sources": [
+    {
+      "title": "Class 1 — Code & Programming Foundations",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html",
+      "id": "class1",
+      "path": "vault/raw/class1.html",
+      "sha256": "f4383cbe1ffec62aa56f44e32aaf8d2da75384311e955517c1e395f2d88430e8",
+      "slides": 125
+    },
+    {
+      "title": "Class 2 — Software Systems",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html",
+      "id": "class2",
+      "path": "vault/raw/class2.html",
+      "sha256": "00a0281db897fd133fbe0e01f7a1d632c9b84bf518a04daed17547495632d1eb",
+      "slides": 61
+    },
+    {
+      "title": "Class 3 — Machine Learning Foundations",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html",
+      "id": "class3",
+      "path": "vault/raw/class3.html",
+      "sha256": "0468e12c46ef3c2b183a257518d80a3d943c036cdfffd831c174e93068da4f0b",
+      "slides": 82
+    },
+    {
+      "title": "Class 4 — Deep Learning, Embeddings & Transformers",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html",
+      "id": "class4",
+      "path": "vault/raw/class4.html",
+      "sha256": "6091b9482247e893ba9193d517694a15b9392d1ba329939faf59a4da39545557",
+      "slides": 75
+    },
+    {
+      "title": "Class 5 — LLM Behavior, Prompting & Retrieval",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html",
+      "id": "class5",
+      "path": "vault/raw/class5.html",
+      "sha256": "a53bb050753d9c123ff259b903055c94f61bb6dfb13d1a8c4c60b499be5a82e6",
+      "slides": 70
+    }
+  ],
+  "chunk_count": 413,
+  "notes": [
+    {
+      "title": "Localhost and Deployment",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Localhost is for testing on your own laptop and cannot be shared, whereas deployment makes an application available to users via a public URL.",
+        "details": [
+          "Localhost is for testing on your own laptop and cannot be shared because the address points to the local machine.",
+          "When a URL is typed, the browser asks for a page, and something sends one back; the difference is who answers (localhost is your laptop talking to itself, hosted sites are machines anyone can reach).",
+          "Frontend is what the browser does with the page it gets back, backend is the machine answering the request, databases are what that machine reads and writes, secrets & auth are how it knows who is asking, and cloud & deployment are how it comes to exist.",
+          "Deploying makes your app available to users with a real URL that can be shared."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T22:55:32.313294Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 9935665459,
+        "load_duration": 4682338584,
+        "prompt_eval_count": 514,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 1161332000,
+        "eval_count": 184,
+        "eval_duration": 4067221000,
+        "wall_seconds": 9.941,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T15:58:32.313959-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "localhost-is-for-testing-but-you-cant-share-it",
+        "what-happens-when-you-type-a-url",
+        "deploying-makes-your-app-available-to-users"
+      ]
+    },
+    {
+      "title": "APIs and Backends",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "The backend is the core of an application, handling logic, security, and data management, while APIs act as agreements between systems that allow interaction with the backend.",
+        "details": [
+          "The backend is the brain behind the app, deciding actions, enforcing rules, and protecting secrets, unlike the frontend which is what the user sees.",
+          "The backend performs functions such as validating requests, applying business rules, reading and writing data, calling external services, and returning a response.",
+          "APIs are an agreement between systems defining what callers can send and what they can rely on receiving, and they should evolve with compatibility and migration paths.",
+          "HTTP methods like GET (read data), POST (create data), PUT (update data), and DELETE (remove data) communicate intent in API design."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T22:55:37.32008Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4996838375,
+        "load_duration": 2781959,
+        "prompt_eval_count": 673,
+        "prompt_eval_cached_count": 1,
+        "prompt_eval_duration": 1394261000,
+        "eval_count": 173,
+        "eval_duration": 3580830000,
+        "wall_seconds": 4.998,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T15:58:37.320206-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "backend-the-brain-behind-the-app",
+        "apis-the-waiter-metaphor",
+        "an-api-is-an-agreement-between-systems",
+        "http-methods"
+      ]
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "wall_seconds": 15.033,
+  "interaction_mode": "ingest",
+  "execution": "local",
+  "recorded_at": "20261005T225537.323495Z"
+}

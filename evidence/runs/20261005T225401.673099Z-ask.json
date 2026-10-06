@@ -1,0 +1,172 @@
+{
+  "question": "What is the actual measured average response time, in seconds, of local Gemma searching these five lectures on my laptop?",
+  "source_scope": null,
+  "expanded_query": "actual measured average response time second local gemma searching these five lecture laptop",
+  "retrieved": [
+    {
+      "id": "class1:strings-deserve-a-minute:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "Strings Deserve a Minute",
+      "anchor": "strings-deserve-a-minute",
+      "passage": "Strings Deserve a Minute\nYou’ll spend more time manipulating text than doing math. Python’s f-strings are the workhorse:\nNote\nEvery messy spreadsheet export, every log file, every API response is text that needs cleaning. These five methods (strip, lower, split, in, f-strings) handle 80% of it.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/strings-deserve-a-minute",
+      "score": 13.0619
+    },
+    {
+      "id": "class5:assignment-setup:1",
+      "source_id": "class5",
+      "path": "vault/raw/class5.html",
+      "title": "Assignment setup",
+      "anchor": "assignment-setup",
+      "passage": "Assignment setup\nStart these downloads now for your personal wiki.\nObsidian: install it to view your wiki, links, and graph.\nApple Silicon Mac (M-series): use MLX via mlx-vlm.\nWindows / Linux: install Ollama.\nLocal Gemma: start with Gemma 4 E2B, 4-bit, if it fits your memory. Download packages and any embedding model while online.\nIntel Mac: Ollama supports CPU inference on macOS 14+; expect slower replies.\nClass signup\n[Image description] Scan to sign up for Class 5 at forms.gle/Pyr4a8Wt1LM4ptnRA\nScan or open the form ↗\nPrompt for your coding assistant\nCheck my OS, chip, RAM/VRAM, and free disk space. Set up a compatible local Gemma runtime and dependencies, download a small model, and help me install Obsidian. Verify a local reply with the internet disconnected.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/assignment-setup",
+      "score": 12.424
+    },
+    {
+      "id": "class3:cross-validation-rotates-the-held-out-fold:1",
+      "source_id": "class3",
+      "path": "vault/raw/class3.html",
+      "title": "Cross-Validation Rotates the Held-Out Fold",
+      "anchor": "cross-validation-rotates-the-held-out-fold",
+      "passage": "Cross-Validation Rotates the Held-Out Fold\n[Image description] Five rounds each hold out a different fold, then summarize validation scores\nTrain on four folds; validate on the fifth. Rotate and compare the average and spread.\nUse these scores to choose settings. Keep a separate final test set. Use time-aware or group-aware folds when rows are related.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html#/cross-validation-rotates-the-held-out-fold",
+      "score": 12.2335
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "model_output": {
+    "supported": false,
+    "answer": "The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.",
+    "citations": []
+  },
+  "answer": {
+    "supported": false,
+    "answer": "The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.",
+    "citations": []
+  },
+  "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T22:54:01.619231Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4210461417,
+    "load_duration": 1781667,
+    "prompt_eval_count": 749,
+    "prompt_eval_cached_count": 240,
+    "prompt_eval_duration": 2734966000,
+    "eval_count": 44,
+    "eval_duration": 1406528000,
+    "wall_seconds": 4.233,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T15:57:01.625203-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "output": {
+        "supported": false,
+        "answer": "The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.",
+        "citations": []
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T22:54:01.619231Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4210461417,
+        "load_duration": 1781667,
+        "prompt_eval_count": 749,
+        "prompt_eval_cached_count": 240,
+        "prompt_eval_duration": 2734966000,
+        "eval_count": 44,
+        "eval_duration": 1406528000,
+        "wall_seconds": 4.233,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T15:57:01.625203-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "history_messages_sent": 0,
+  "interaction_mode": "ask",
+  "execution": "local",
+  "recorded_at": "20261005T225401.673099Z"
+}

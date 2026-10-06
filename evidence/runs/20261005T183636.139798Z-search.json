@@ -1,0 +1,30 @@
+{
+  "query": "localhost",
+  "expanded_query": "localhost",
+  "retrieved": [
+    {
+      "id": "class1:localhost-running-software-on-your-own-machine:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "Localhost: Running Software on Your Own Machine",
+      "anchor": "localhost-running-software-on-your-own-machine",
+      "passage": "Localhost: Running Software on Your Own Machine",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-running-software-on-your-own-machine",
+      "score": 6.9944
+    },
+    {
+      "id": "class1:what-localhost-actually-means:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "What localhost Actually Means",
+      "anchor": "what-localhost-actually-means",
+      "passage": "What localhost Actually Means\nlocalhost is a name that always points back at the machine you are typing on. Its address is 127.0.0.1 — literally “this computer.”\nYour browser asks for http://localhost:8000\nThe request never touches the internet — no DNS, no wifi, no cable\nIt goes from your browser to another program on your own laptop, and comes straight back\nNote\nThis is why localhost still works on a plane with no wifi. You are the customer and the restaurant.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/what-localhost-actually-means",
+      "score": 6.9206
+    }
+  ],
+  "model_called": false,
+  "interaction_mode": "search",
+  "execution": "local",
+  "recorded_at": "20261005T183636.139798Z"
+}

@@ -1,0 +1,42 @@
+{
+  "class1:Programming Basics": {
+    "fingerprint": "fda3ea375b3fd8da44ffc23ea11486d5a62bcfc20f88f358f5d85a86bd93f12b",
+    "path": "vault/wiki/Software/Programming Basics.md"
+  },
+  "class1:Debugging and Tests": {
+    "fingerprint": "17679854703b7487ac67441a5827869ec09193ee554c8ca5c6d72d92053228c8",
+    "path": "vault/wiki/Software/Debugging and Tests.md"
+  },
+  "class2:Localhost and Deployment": {
+    "fingerprint": "3f0126adfbf160674895f6e016d16cd501a626e54b5e89866a68762b08cff401",
+    "path": "vault/wiki/Software/Localhost and Deployment.md"
+  },
+  "class2:APIs and Backends": {
+    "fingerprint": "337b4d540457fcb0751db5de98aaf3c29f3fa315e651e9b081dbe6f240e164b1",
+    "path": "vault/wiki/Software/APIs and Backends.md"
+  },
+  "class3:Model Training": {
+    "fingerprint": "bb1b11ee4a609c9975609c5b39da7aa13c4801c06d758396f3719fab6cd8b96b",
+    "path": "vault/wiki/Machine Learning/Model Training.md"
+  },
+  "class3:Model Evaluation": {
+    "fingerprint": "696439da32d31d8cc8130a7257fda1303022f8483efaf5ae581fb3c9d2b3adf0",
+    "path": "vault/wiki/Machine Learning/Model Evaluation.md"
+  },
+  "class4:Text Embeddings": {
+    "fingerprint": "fbba37458a24cd8bac66f56a75485a6265ff8ee1d6219a8d0c41ea16ad5a2a98",
+    "path": "vault/wiki/Language Models/Text Embeddings.md"
+  },
+  "class4:Attention and Context": {
+    "fingerprint": "db37a0c7d8180f62297d7dad19e5728c19d3205ada3bfaa25543cdbef0875c38",
+    "path": "vault/wiki/Language Models/Attention and Context.md"
+  },
+  "class5:Context Windows": {
+    "fingerprint": "ca3af6da3e3d45b12d529cc30992141c77bfec279876d7237e192099c7adf2f6",
+    "path": "vault/wiki/Language Models/Context Windows.md"
+  },
+  "class5:Retrieval Augmented Generation": {
+    "fingerprint": "a9d0190b9f42a11a536ace7499aa6d7a5bd344ffec2c917f08c5a7084706c0b1",
+    "path": "vault/wiki/Language Models/Retrieval Augmented Generation.md"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "captured_at": "2026-10-05T00:08:02.095418+00:00",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "python": "3.9.6",
+  "device": "MacBook Air (Mac16,12)",
+  "chip": "Apple M4",
+  "cpu_cores": 10,
+  "gpu_cores": 8,
+  "unified_memory_gb": 16,
+  "macos": "15.5",
+  "ollama": "0.34.3",
+  "model": "gemma4:e2b",
+  "quantization": "Q4_K_M",
+  "disk_free_at_setup_gib": 28,
+  "memory_note": "memory_pressure reported 30% system-wide free at initial setup; this is a dynamic OS indicator, not exact allocatable RAM. Ollama /api/ps is a model-allocation snapshot, not whole-system peak RSS.",
+  "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3797 \nPages purgeable: 2 \nPages purged: 329632112 \n\nSwap I/O:\nSwapins: 15589526 \nSwapouts: 19851008 \n\nPage Q counts:\nPages active: 144781 \nPages inactive: 143187 \nPages speculative: 738 \nPages throttled: 0 \nPages wired down: 369999 \n\nCompressor Stats:\nPages used by compressor: 346821 \nPages decompressed: 2061700354 \nPages compressed: 2242050456 \n\nFile I/O:\nPageins: 146201831 \nPageouts: 3803540 \n\nSystem-wide memory free percentage: 28%\n"
+}

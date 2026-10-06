@@ -1,0 +1,143 @@
+{
+  "로컬": [
+    "local",
+    "localhost"
+  ],
+  "컴퓨터": [
+    "computer",
+    "laptop"
+  ],
+  "친구": [
+    "coworker",
+    "share"
+  ],
+  "웹사이트": [
+    "website",
+    "localhost"
+  ],
+  "링크": [
+    "link",
+    "share"
+  ],
+  "학습": [
+    "training",
+    "weights"
+  ],
+  "시험": [
+    "test"
+  ],
+  "최종": [
+    "final"
+  ],
+  "검증": [
+    "validation"
+  ],
+  "평가": [
+    "evaluation",
+    "performance"
+  ],
+  "점수": [
+    "score"
+  ],
+  "설정": [
+    "settings"
+  ],
+  "선택": [
+    "choose",
+    "choosing"
+  ],
+  "데이터": [
+    "data"
+  ],
+  "과적합": [
+    "overfitting"
+  ],
+  "임베딩": [
+    "embedding",
+    "embeddings",
+    "vector"
+  ],
+  "벡터": [
+    "vector",
+    "vectors"
+  ],
+  "검색": [
+    "retrieval",
+    "search"
+  ],
+  "문서": [
+    "documents",
+    "passages"
+  ],
+  "질문": [
+    "question"
+  ],
+  "관련": [
+    "relevant",
+    "similarity"
+  ],
+  "재학습": [
+    "retrain",
+    "training",
+    "weights"
+  ],
+  "메모리": [
+    "memory"
+  ],
+  "응답 시간": [
+    "latency",
+    "seconds",
+    "measured"
+  ],
+  "평균": [
+    "average",
+    "mean"
+  ],
+  "노트북": [
+    "laptop"
+  ],
+  "프롬프트": [
+    "prompt",
+    "prompting"
+  ],
+  "문맥": [
+    "context"
+  ],
+  "신경망": [
+    "neural",
+    "network"
+  ],
+  "함수": [
+    "function"
+  ],
+  "오류": [
+    "error",
+    "debugging"
+  ],
+  "깃": [
+    "git",
+    "github"
+  ],
+  "온도": [
+    "temperature"
+  ],
+  "트랜스포머": [
+    "transformer",
+    "attention"
+  ],
+  "원문": [
+    "source"
+  ],
+  "출처": [
+    "source",
+    "citations"
+  ],
+  "friend": [
+    "coworker",
+    "share"
+  ],
+  "embedding": [
+    "embedding",
+    "vector"
+  ]
+}

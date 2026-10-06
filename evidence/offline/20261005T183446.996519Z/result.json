@@ -1,0 +1,13 @@
+{
+  "started_at": "20261005T183447.000027Z",
+  "status": "needs-review",
+  "original_wifi_state": "Wi-Fi Power (en0): On",
+  "reingestion_identical": true,
+  "note_count": 10,
+  "evaluation": "evidence/evaluations/20261005T183600.447063Z/summary.json",
+  "all_evaluation_checks_passed": true,
+  "disconnected_at_end": false,
+  "restore_command_exit": 0,
+  "wifi_after_restore": "Wi-Fi Power (en0): On",
+  "elapsed_seconds": 109.306
+}

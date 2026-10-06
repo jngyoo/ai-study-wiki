@@ -1,0 +1,177 @@
+{
+  "question": "Why can my friend not view my website when I send them a localhost link running on my computer?",
+  "expanded_query": "friend view website when send them localhost link running computer",
+  "retrieved": [
+    {
+      "id": "class1:localhost-is-not-the-internet:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "localhost Is Not the Internet",
+      "anchor": "localhost-is-not-the-internet",
+      "passage": "localhost Is Not the Internet\nSend http://localhost:8000 to the person sitting next to you.\nOn their machine, localhost means their computer — not yours\nThey get a connection error, or their own project if they happen to be running one\nThe link is meaningless anywhere except your laptop\nNote\nSame room, same wifi, and it still doesn’t work. Your laptop has no public address, and nothing on the internet knows how to find it. Giving it one is what hosting means — and it is the first thing we do in Class 2.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-is-not-the-internet",
+      "score": 19.8212
+    },
+    {
+      "id": "class2:localhost-is-for-testing-but-you-cant-share-it:1",
+      "source_id": "class2",
+      "path": "vault/raw/class2.html",
+      "title": "Localhost Is for Testing, But You Can’t Share It",
+      "anchor": "localhost-is-for-testing-but-you-cant-share-it",
+      "passage": "Localhost Is for Testing, But You Can’t Share It\nLast class you built a pricing function, tests around it, and a small report site. All of it ran on localhost, which just means your own laptop.\nHit Ctrl+C and it’s gone. Send the link to a coworker and they get nothing, because that address points at their machine, not yours.\nToday we fix that. Same logic, but on a real URL anyone can open, with real data behind it, access control, and a deploy that keeps running after you close the lid.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html#/localhost-is-for-testing-but-you-cant-share-it",
+      "score": 15.9394
+    },
+    {
+      "id": "class1:the-site-is-a-process-not-a-file:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "The Site Is a Process, Not a File",
+      "anchor": "the-site-is-a-process-not-a-file",
+      "passage": "The Site Is a Process, Not a File\nPress Ctrl+C in the terminal, then reload the page.\nThis site can’t be reached. localhost refused to connect.\nYour index.html is still sitting on disk, perfectly intact. The site is gone anyway.\nA website is not a file. It is a program that has to be running, on a computer that has to be on.\nImportant\nClose your laptop and your site dies with it. That one fact is the entire reason cloud hosting exists — and the entire reason anyone says “we can’t deploy on Friday.”",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/the-site-is-a-process-not-a-file",
+      "score": 13.3145
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "model_output": {
+    "supported": true,
+    "answer": "localhost is not accessible from other computers because it refers to your own machine, not the internet [class1:localhost-is-not-the-internet:1]. The link is only meaningful on your laptop, and nothing on the internet can find it [class1:localhost-is-not-the-internet:1].",
+    "citations": [
+      "class1:localhost-is-not-the-internet:1"
+    ]
+  },
+  "answer": {
+    "supported": true,
+    "answer": "localhost is not accessible from other computers because it refers to your own machine, not the internet [class1:localhost-is-not-the-internet:1]. The link is only meaningful on your laptop, and nothing on the internet can find it [class1:localhost-is-not-the-internet:1].",
+    "citations": [
+      "class1:localhost-is-not-the-internet:1"
+    ]
+  },
+  "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T18:08:40.654756Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3455563083,
+    "load_duration": 3741875,
+    "prompt_eval_count": 779,
+    "prompt_eval_cached_count": 1,
+    "prompt_eval_duration": 1565308000,
+    "eval_count": 97,
+    "eval_duration": 1858499000,
+    "wall_seconds": 3.461,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T11:11:40.654887-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "output": {
+        "supported": true,
+        "answer": "localhost is not accessible from other computers because it refers to your own machine, not the internet [class1:localhost-is-not-the-internet:1]. The link is only meaningful on your laptop, and nothing on the internet can find it [class1:localhost-is-not-the-internet:1].",
+        "citations": [
+          "class1:localhost-is-not-the-internet:1"
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:08:40.654756Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3455563083,
+        "load_duration": 3741875,
+        "prompt_eval_count": 779,
+        "prompt_eval_cached_count": 1,
+        "prompt_eval_duration": 1565308000,
+        "eval_count": 97,
+        "eval_duration": 1858499000,
+        "wall_seconds": 3.461,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:11:40.654887-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "history_messages_sent": 0,
+  "interaction_mode": "ask",
+  "execution": "local",
+  "recorded_at": "20261005T180840.660550Z"
+}

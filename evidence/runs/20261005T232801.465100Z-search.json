@@ -1,0 +1,70 @@
+{
+  "query": "localhost",
+  "expanded_query": "localhost",
+  "retrieved": [
+    {
+      "id": "class1:localhost-running-software-on-your-own-machine:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "Localhost: Running Software on Your Own Machine",
+      "anchor": "localhost-running-software-on-your-own-machine",
+      "passage": "Localhost: Running Software on Your Own Machine",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-running-software-on-your-own-machine",
+      "score": 6.9944
+    },
+    {
+      "id": "class1:what-localhost-actually-means:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "What localhost Actually Means",
+      "anchor": "what-localhost-actually-means",
+      "passage": "What localhost Actually Means\nlocalhost is a name that always points back at the machine you are typing on. Its address is 127.0.0.1 — literally “this computer.”\nYour browser asks for http://localhost:8000\nThe request never touches the internet — no DNS, no wifi, no cable\nIt goes from your browser to another program on your own laptop, and comes straight back\nNote\nThis is why localhost still works on a plane with no wifi. You are the customer and the restaurant.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/what-localhost-actually-means",
+      "score": 6.9206
+    },
+    {
+      "id": "class1:localhost-is-not-the-internet:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "localhost Is Not the Internet",
+      "anchor": "localhost-is-not-the-internet",
+      "passage": "localhost Is Not the Internet\nSend http://localhost:8000 to the person sitting next to you.\nOn their machine, localhost means their computer — not yours\nThey get a connection error, or their own project if they happen to be running one\nThe link is meaningless anywhere except your laptop\nNote\nSame room, same wifi, and it still doesn’t work. Your laptop has no public address, and nothing on the internet knows how to find it. Giving it one is what hosting means — and it is the first thing we do in Class 2.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-is-not-the-internet",
+      "score": 6.5057
+    },
+    {
+      "id": "class2:localhost-is-for-testing-but-you-cant-share-it:1",
+      "source_id": "class2",
+      "path": "vault/raw/class2.html",
+      "title": "Localhost Is for Testing, But You Can’t Share It",
+      "anchor": "localhost-is-for-testing-but-you-cant-share-it",
+      "passage": "Localhost Is for Testing, But You Can’t Share It\nLast class you built a pricing function, tests around it, and a small report site. All of it ran on localhost, which just means your own laptop.\nHit Ctrl+C and it’s gone. Send the link to a coworker and they get nothing, because that address points at their machine, not yours.\nToday we fix that. Same logic, but on a real URL anyone can open, with real data behind it, access control, and a deploy that keeps running after you close the lid.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html#/localhost-is-for-testing-but-you-cant-share-it",
+      "score": 6.0522
+    },
+    {
+      "id": "class1:ports-apartment-numbers-for-one-address:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "Ports: Apartment Numbers for One Address",
+      "anchor": "ports-apartment-numbers-for-one-address",
+      "passage": "Ports: Apartment Numbers for One Address\nOne computer runs many programs at once. The port says which one you are talking to.\nAddress |\nWho usually lives there |\nlocalhost:8000 |\nPython’s built-in web server |\nlocalhost:3000 |\nA Node / React / Next.js dev server |\nlocalhost:5432 |\nA PostgreSQL database |\nlocalhost:11434 |\nOllama, running an LLM on your own machine |\nThe address is the building; the port is the apartment. Address already in use means someone is already home — use a different port, or stop the program that’s squatting there.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/ports-apartment-numbers-for-one-address",
+      "score": 5.9081
+    },
+    {
+      "id": "class1:you-will-meet-this-constantly-with-ai-agents:1",
+      "source_id": "class1",
+      "path": "vault/raw/class1.html",
+      "title": "You Will Meet This Constantly with AI Agents",
+      "anchor": "you-will-meet-this-constantly-with-ai-agents",
+      "passage": "You Will Meet This Constantly with AI Agents\nAsk an agent to build you a web app and it finishes with something like:\n✓ Ready in 1.2s\n▲ Local: http://localhost:3000\n“The agent said it’s done but the page is blank” — is the server still running? Look at the terminal.\n“It worked yesterday” — you rebooted. Restart the dev server.\n“Port 3000 is already in use” — you started it twice. Stop the old one.\n“I sent my boss the link and it didn’t load” — you sent a localhost URL.\nTip\nUnderstanding what “running locally” means turns four alarming bugs into four boring ones.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html#/you-will-meet-this-constantly-with-ai-agents",
+      "score": 4.4648
+    }
+  ],
+  "model_called": false,
+  "interaction_mode": "search",
+  "execution": "local",
+  "recorded_at": "20261005T232801.465100Z"
+}

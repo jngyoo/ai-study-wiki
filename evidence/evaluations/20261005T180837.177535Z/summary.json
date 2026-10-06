@@ -1,0 +1,78 @@
+{
+  "network_status": "Not verified disconnected; local-only API calls.",
+  "questions": [
+    {
+      "id": "q1",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": false,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "localhost is not accessible from other computers because it refers to your own machine, not the internet [class1:localhost-is-not-the-internet:1]. The link is only meaningful on your laptop, and nothing on the internet can find it [class1:localhost-is-not-the-internet:1].",
+        "citations": [
+          "class1:localhost-is-not-the-internet:1"
+        ]
+      },
+      "seconds": 3.461
+    },
+    {
+      "id": "q2",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "If you change the model after seeing its test score, that score can guide development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+        "citations": [
+          "class3:keep-a-test-set-outside-development:1"
+        ]
+      },
+      "seconds": 5.627
+    },
+    {
+      "id": "q3",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": false,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for chunks near the question [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+        "citations": [
+          "class5:building-a-tiny-rag-demo:1",
+          "class5:vector-databases-search-by-meaning:1"
+        ]
+      },
+      "seconds": 4.787
+    },
+    {
+      "id": "q4",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": false,
+        "answer": "The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.",
+        "citations": []
+      },
+      "seconds": 2.084
+    }
+  ],
+  "mode_checks": {
+    "chat_no_forced_retrieval": true,
+    "followup_received_history": true,
+    "ask_ignores_chat_only_claim": true,
+    "search_cli_success": true
+  }
+}

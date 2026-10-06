@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-10-05T18:34:49.554790+00:00",
+  "wifi_power": "Wi-Fi Power (en0): Off",
+  "active_network_interfaces": [],
+  "external_connectivity_probes": [
+    {
+      "address": "1.1.1.1",
+      "connected": false,
+      "error": "[Errno 51] Network is unreachable"
+    },
+    {
+      "address": "8.8.8.8",
+      "connected": false,
+      "error": "[Errno 51] Network is unreachable"
+    }
+  ]
+}

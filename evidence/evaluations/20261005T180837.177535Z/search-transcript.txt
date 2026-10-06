@@ -1,0 +1,15 @@
+[class1:localhost-running-software-on-your-own-machine:1] vault/raw/class1.html / Localhost: Running Software on Your Own Machine
+Localhost: Running Software on Your Own Machine
+https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-running-software-on-your-own-machine
+
+[class1:what-localhost-actually-means:1] vault/raw/class1.html / What localhost Actually Means
+What localhost Actually Means
+localhost is a name that always points back at the machine you are typing on. Its address is 127.0.0.1 — literally “this computer.”
+Your browser asks for http://localhost:8000
+The request never touches the internet — no DNS, no wifi, no cable
+It goes from your browser to another program on your own laptop, and comes straight back
+Note
+This is why localhost still works on a plane with no wifi. You are the customer and the restaurant.
+https://haas-ai-classes-fall-26.vercel.app/class1.html#/what-localhost-actually-means
+
+Evidence: evidence/runs/20261005T180857.919209Z-search.json

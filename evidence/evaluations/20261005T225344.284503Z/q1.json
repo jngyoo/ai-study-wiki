@@ -1,0 +1,191 @@
+{
+  "expectation": {
+    "id": "q1",
+    "question": "Why can my friend not view my website when I send them a localhost link running on my computer?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class2"
+    ],
+    "expected_anchors": [
+      "localhost-is-for-testing-but-you-cant-share-it"
+    ],
+    "rubric": "localhost refers to the computer of the person opening the link. Cite the relevant Class 2 passage.",
+    "source_scope": [
+      "class2"
+    ]
+  },
+  "actual": {
+    "question": "Why can my friend not view my website when I send them a localhost link running on my computer?",
+    "source_scope": [
+      "class2"
+    ],
+    "expanded_query": "friend view website when send them localhost link running computer coworker share",
+    "retrieved": [
+      {
+        "id": "class2:localhost-is-for-testing-but-you-cant-share-it:1",
+        "source_id": "class2",
+        "path": "vault/raw/class2.html",
+        "title": "Localhost Is for Testing, But You Can’t Share It",
+        "anchor": "localhost-is-for-testing-but-you-cant-share-it",
+        "passage": "Localhost Is for Testing, But You Can’t Share It\nLast class you built a pricing function, tests around it, and a small report site. All of it ran on localhost, which just means your own laptop.\nHit Ctrl+C and it’s gone. Send the link to a coworker and they get nothing, because that address points at their machine, not yours.\nToday we fix that. Same logic, but on a real URL anyone can open, with real data behind it, access control, and a deploy that keeps running after you close the lid.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html#/localhost-is-for-testing-but-you-cant-share-it",
+        "score": 19.8699
+      },
+      {
+        "id": "class2:what-is-the-cloud:1",
+        "source_id": "class2",
+        "path": "vault/raw/class2.html",
+        "title": "What is “The Cloud”?",
+        "anchor": "what-is-the-cloud",
+        "passage": "What is “The Cloud”?\nThe cloud is someone else’s computers in a data center.\nInstead of buying and maintaining servers, you rent computing power from a cloud provider.\nRuns 24/7, even when your laptop sleeps\nAvailable to users through the internet\nCan scale as traffic grows\nThe provider manages the physical hardware\nYou deploy the code. They keep the computers running.\n[Image description] Four independent hand-drawn cloud shapes containing the logos for AWS, Microsoft Azure, Google Cloud, and Vercel.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html#/what-is-the-cloud",
+        "score": 7.3877
+      }
+    ],
+    "identity": {
+      "runtime": {
+        "version": "0.34.3"
+      },
+      "model": {
+        "name": "gemma4:e2b",
+        "model": "gemma4:e2b",
+        "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+        "size": 7162405886,
+        "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma4",
+          "families": [
+            "gemma4"
+          ],
+          "parameter_size": "5.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 131072,
+          "embedding_length": 1536
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "audio",
+          "tools",
+          "thinking"
+        ]
+      },
+      "settings": {
+        "base_url": "http://127.0.0.1:11434",
+        "model": "gemma4:e2b",
+        "num_ctx": 8192,
+        "temperature": 0.2
+      }
+    },
+    "model_output": {
+      "supported": true,
+      "answer": "A localhost link points to your own computer, so it cannot be viewed by others because the address points to their machine, not yours [class2:localhost-is-for-testing-but-you-cant-share-it:1].",
+      "citations": [
+        "class2:localhost-is-for-testing-but-you-cant-share-it:1"
+      ]
+    },
+    "answer": {
+      "supported": true,
+      "answer": "A localhost link points to your own computer, so it cannot be viewed by others because the address points to their machine, not yours [class2:localhost-is-for-testing-but-you-cant-share-it:1].",
+      "citations": [
+        "class2:localhost-is-for-testing-but-you-cant-share-it:1"
+      ]
+    },
+    "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+    "usage": {
+      "model": "gemma4:e2b",
+      "created_at": "2026-10-05T22:53:47.89393Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 3603397084,
+      "load_duration": 2712834,
+      "prompt_eval_count": 615,
+      "prompt_eval_cached_count": 1,
+      "prompt_eval_duration": 1341863000,
+      "eval_count": 98,
+      "eval_duration": 2232838000,
+      "wall_seconds": 3.606,
+      "loaded_models": {
+        "models": [
+          {
+            "name": "gemma4:e2b",
+            "model": "gemma4:e2b",
+            "size": 1733023497,
+            "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma4",
+              "families": [
+                "gemma4"
+              ],
+              "parameter_size": "5.1B",
+              "quantization_level": "Q4_K_M"
+            },
+            "expires_at": "2026-10-05T15:56:47.894203-07:00",
+            "size_vram": 1733023497,
+            "context_length": 8192
+          }
+        ]
+      }
+    },
+    "attempts": [
+      {
+        "output": {
+          "supported": true,
+          "answer": "A localhost link points to your own computer, so it cannot be viewed by others because the address points to their machine, not yours [class2:localhost-is-for-testing-but-you-cant-share-it:1].",
+          "citations": [
+            "class2:localhost-is-for-testing-but-you-cant-share-it:1"
+          ]
+        },
+        "usage": {
+          "model": "gemma4:e2b",
+          "created_at": "2026-10-05T22:53:47.89393Z",
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3603397084,
+          "load_duration": 2712834,
+          "prompt_eval_count": 615,
+          "prompt_eval_cached_count": 1,
+          "prompt_eval_duration": 1341863000,
+          "eval_count": 98,
+          "eval_duration": 2232838000,
+          "wall_seconds": 3.606,
+          "loaded_models": {
+            "models": [
+              {
+                "name": "gemma4:e2b",
+                "model": "gemma4:e2b",
+                "size": 1733023497,
+                "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "gemma4",
+                  "families": [
+                    "gemma4"
+                  ],
+                  "parameter_size": "5.1B",
+                  "quantization_level": "Q4_K_M"
+                },
+                "expires_at": "2026-10-05T15:56:47.894203-07:00",
+                "size_vram": 1733023497,
+                "context_length": 8192
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "history_messages_sent": 0,
+    "evidence_file": "evidence/runs/20261005T225347.901503Z-ask.json"
+  },
+  "mechanical_checks": {
+    "support_flag": true,
+    "expected_sources_cited": true,
+    "citation_ids_valid": true,
+    "no_chat_history": true
+  }
+}

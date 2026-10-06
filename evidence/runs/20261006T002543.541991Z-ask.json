@@ -1,0 +1,141 @@
+{
+  "question": "I don't know",
+  "source_scope": null,
+  "expanded_query": "don know",
+  "retrieved": [],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "model_output": {
+    "supported": false,
+    "answer": "The provided text does not contain any information to answer the question.",
+    "citations": []
+  },
+  "answer": {
+    "supported": false,
+    "answer": "The provided text does not contain any information to answer the question.",
+    "citations": []
+  },
+  "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-06T00:25:43.486525Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 5718915417,
+    "load_duration": 4144148459,
+    "prompt_eval_count": 310,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 865649000,
+    "eval_count": 33,
+    "eval_duration": 690432000,
+    "wall_seconds": 5.76,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T17:28:43.488871-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "output": {
+        "supported": false,
+        "answer": "The provided text does not contain any information to answer the question.",
+        "citations": []
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-06T00:25:43.486525Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 5718915417,
+        "load_duration": 4144148459,
+        "prompt_eval_count": 310,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 865649000,
+        "eval_count": 33,
+        "eval_duration": 690432000,
+        "wall_seconds": 5.76,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T17:28:43.488871-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "history_messages_sent": 0,
+  "interaction_mode": "ask",
+  "execution": "local",
+  "recorded_at": "20261006T002543.541991Z"
+}

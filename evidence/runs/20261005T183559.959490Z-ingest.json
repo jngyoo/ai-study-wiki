@@ -1,0 +1,646 @@
+{
+  "index_only": false,
+  "forced": true,
+  "sources": [
+    {
+      "title": "Class 1 — Code & Programming Foundations",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html",
+      "id": "class1",
+      "path": "vault/raw/class1.html",
+      "sha256": "f4383cbe1ffec62aa56f44e32aaf8d2da75384311e955517c1e395f2d88430e8",
+      "slides": 125
+    },
+    {
+      "title": "Class 2 — Software Systems",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html",
+      "id": "class2",
+      "path": "vault/raw/class2.html",
+      "sha256": "00a0281db897fd133fbe0e01f7a1d632c9b84bf518a04daed17547495632d1eb",
+      "slides": 61
+    },
+    {
+      "title": "Class 3 — Machine Learning Foundations",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html",
+      "id": "class3",
+      "path": "vault/raw/class3.html",
+      "sha256": "0468e12c46ef3c2b183a257518d80a3d943c036cdfffd831c174e93068da4f0b",
+      "slides": 82
+    },
+    {
+      "title": "Class 4 — Deep Learning, Embeddings & Transformers",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html",
+      "id": "class4",
+      "path": "vault/raw/class4.html",
+      "sha256": "6091b9482247e893ba9193d517694a15b9392d1ba329939faf59a4da39545557",
+      "slides": 75
+    },
+    {
+      "title": "Class 5 — LLM Behavior, Prompting & Retrieval",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html",
+      "id": "class5",
+      "path": "vault/raw/class5.html",
+      "sha256": "a53bb050753d9c123ff259b903055c94f61bb6dfb13d1a8c4c60b499be5a82e6",
+      "slides": 70
+    }
+  ],
+  "chunk_count": 413,
+  "notes": [
+    {
+      "title": "Programming Basics",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Code is a set of instructions for a computer, similar to a recipe, and programs are built from fundamental building blocks like variables, conditionals, loops, and functions.",
+        "details": [
+          "Code is a set of instructions that tells a computer what to do.",
+          "Variables are used for storing data.",
+          "Conditionals allow a program to make decisions.",
+          "Loops repeat actions so they do not need to be repeated."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:34:54.308684Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4422600959,
+        "load_duration": 16817250,
+        "prompt_eval_count": 364,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 1155136000,
+        "eval_count": 99,
+        "eval_duration": 3147118000,
+        "wall_seconds": 4.425,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:37:54.309768-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "code-is-a-recipe",
+        "building-blocks-variables",
+        "building-blocks-conditionals",
+        "building-blocks-loops",
+        "building-blocks-functions"
+      ]
+    },
+    {
+      "title": "Debugging and Tests",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Software errors fall into syntax, runtime, and logic errors, and testing is important because logic errors hide without error messages. Debugging follows a hypothesis testing method, and tests turn examples into executable promises.",
+        "details": [
+          "Syntax errors occur when the code cannot be read, usually due to a missing quote, bracket, colon, or indentation, and the program has not started.",
+          "Runtime errors occur when the code has started but hits a bad situation, such as a missing dictionary key, dividing by zero, or asking for a non-existent file.",
+          "Logic errors are dangerous because the program runs and returns a believable wrong answer without any error message or crash.",
+          "Debugging is hypothesis testing, which involves reproducing behavior, finding the smallest surprising value or branch, stating a hypothesis, changing one thing, and re-running the case, changing only one thing at a time to avoid adding new bugs."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:01.995785Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 7682461417,
+        "load_duration": 3466917,
+        "prompt_eval_count": 495,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 1382358000,
+        "eval_count": 196,
+        "eval_duration": 6257592000,
+        "wall_seconds": 7.684,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:01.996009-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "three-flavors-of-broken",
+        "debugging-is-hypothesis-testing",
+        "tests-turn-examples-into-executable-promises"
+      ]
+    },
+    {
+      "title": "Localhost and Deployment",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Localhost is for testing on your own laptop and cannot be shared, whereas deployment makes an application available to users via a public URL.",
+        "details": [
+          "Localhost is for testing on your own laptop and cannot be shared because the address points to the local machine.",
+          "When a URL is typed, the browser asks for a page, and something sends one back; the difference is who answers (localhost is your laptop talking to itself, hosted sites are machines anyone can reach).",
+          "Frontend is what the browser does with the page it gets back, backend is the machine answering the request, databases are what that machine reads and writes, secrets & auth are how it knows who is asking, and cloud & deployment are how it comes to exist.",
+          "Deploying makes your app available to users with a real URL that can be shared."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:08.678926Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6675130500,
+        "load_duration": 2695083,
+        "prompt_eval_count": 514,
+        "prompt_eval_cached_count": 0,
+        "prompt_eval_duration": 1396152000,
+        "eval_count": 184,
+        "eval_duration": 5251848000,
+        "wall_seconds": 6.676,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:08.679227-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "localhost-is-for-testing-but-you-cant-share-it",
+        "what-happens-when-you-type-a-url",
+        "deploying-makes-your-app-available-to-users"
+      ]
+    },
+    {
+      "title": "APIs and Backends",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "The backend is the core of an application, handling logic, security, and data management, while APIs act as agreements between systems that allow interaction with the backend.",
+        "details": [
+          "The backend is the brain behind the app, deciding actions, enforcing rules, and protecting secrets, unlike the frontend which is what the user sees.",
+          "The backend performs functions such as validating requests, applying business rules, reading and writing data, calling external services, and returning a response.",
+          "APIs are an agreement between systems defining what callers can send and what they can rely on receiving, and they should evolve with compatibility and migration paths.",
+          "HTTP methods like GET (read data), POST (create data), PUT (update data), and DELETE (remove data) communicate intent in API design."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:15.474965Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6793621625,
+        "load_duration": 1502291,
+        "prompt_eval_count": 673,
+        "prompt_eval_cached_count": 1,
+        "prompt_eval_duration": 1776982000,
+        "eval_count": 173,
+        "eval_duration": 4990803000,
+        "wall_seconds": 6.795,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:15.475081-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "backend-the-brain-behind-the-app",
+        "apis-the-waiter-metaphor",
+        "an-api-is-an-agreement-between-systems",
+        "http-methods"
+      ]
+    },
+    {
+      "title": "Model Training",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "A model has adjustable parameters that are chosen during training to fit historical examples, and inference uses these fitted parameters to make predictions. Training involves minimizing a loss measure, often using gradient descent to update the parameters.",
+        "details": [
+          "A model has adjustable parameters, such as the slope ($w$) and intercept ($b$) in the equation $\text{predicted revenue} = w \times \text{ad spend} + b$.",
+          "Training chooses parameter values that fit historical examples.",
+          "Loss measures prediction error, and training tries to reduce this average error, where squaring makes large misses count more.",
+          "Gradient Descent updates the parameters by moving them downhill on a loss curve, using the gradient to determine the direction and the learning rate to control the step size."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:22.445445Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6966829833,
+        "load_duration": 928750,
+        "prompt_eval_count": 598,
+        "prompt_eval_cached_count": 1,
+        "prompt_eval_duration": 1617802000,
+        "eval_count": 169,
+        "eval_duration": 5327694000,
+        "wall_seconds": 6.972,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:22.445613-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "a-model-has-adjustable-parameters",
+        "loss-measures-prediction-error",
+        "gradient-descent-updates-the-parameters",
+        "training-and-inference-use-different-information"
+      ]
+    },
+    {
+      "title": "Model Evaluation",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "It is crucial to keep a test set separate from the development process to ensure that model evaluation reflects future performance accurately. The process should involve separating fitting, choosing, and testing steps to avoid letting the test score guide development.",
+        "details": [
+          "Keep a Test Set Outside Development: The final test set should remain untouched until choices are fixed, as changing the model after seeing its test score allows that score to guide development.",
+          "Separate Fitting, Choosing, and Testing: Training data, validation data, and test data should be kept separate for fitting, choosing model settings, and estimating final performance.",
+          "Overfitting vs. Underfitting: Overfitting occurs when a model fits noise along with the signal from the training details, whereas underfitting means the model is too limited to capture the pattern.",
+          "Data Handling: Keep related records together when necessary, as near-duplicate images from the same person in both sets can make the score misleading."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:32.993759Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 10539610916,
+        "load_duration": 1933458,
+        "prompt_eval_count": 472,
+        "prompt_eval_cached_count": 85,
+        "prompt_eval_duration": 1074221000,
+        "eval_count": 202,
+        "eval_duration": 9395085000,
+        "wall_seconds": 10.689,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:32.99742-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "keep-a-test-set-outside-development",
+        "separate-fitting-choosing-and-testing",
+        "overfitting-fits-noise-along-with-signal"
+      ]
+    },
+    {
+      "title": "Text Embeddings",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "A word embedding is a learned vector of numbers that represents a word or token, allowing words with similar contexts to have similar embeddings. The distance between these vectors reflects the semantic similarity between the words.",
+        "details": [
+          "An embedding is a learned vector (a list of numbers) that represents a word or token, which is adjusted during training to help the model make predictions.",
+          "Word2Vec learned that words in similar contexts receive similar vectors, causing words with similar meanings to cluster together in vector space.",
+          "The distance between word vectors reflects meaning; nearby vectors indicate related meanings, such as 'dog' and 'puppy' being closer than 'dog' and 'airplane'.",
+          "The model learned concepts like gender as directions in vector space without explicit teaching."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:41.697432Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 8520922584,
+        "load_duration": 5405209,
+        "prompt_eval_count": 618,
+        "prompt_eval_cached_count": 84,
+        "prompt_eval_duration": 1706504000,
+        "eval_count": 169,
+        "eval_duration": 6748129000,
+        "wall_seconds": 8.543,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:41.707143-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "the-problem-words-arent-numbers",
+        "words-as-points-in-space",
+        "distance-becomes-a-retrieval-primitive"
+      ]
+    },
+    {
+      "title": "Attention and Context",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Attention is a mechanism that adjusts word representations based on context, changes how information is combined, and updates the meaning of words.",
+        "details": [
+          "Context determines meaning, as a single vector for a word, like \"bank,\" must account for different meanings depending on the context.",
+          "Modern models create contextual representations where the vector for a word is adjusted on the fly by the words around it, with attention being the mechanism for this adjustment.",
+          "Attention combines information from available token positions, allowing a recurrent network to connect directly to earlier positions within the context window.",
+          "Attention updates meaning by pulling an embedding toward a specific meaning based on its context, such as \"American shrew\" pulling \"mole\" toward the animal direction."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:47.446134Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 5713597250,
+        "load_duration": 10106250,
+        "prompt_eval_count": 435,
+        "prompt_eval_cached_count": 105,
+        "prompt_eval_duration": 1077419000,
+        "eval_count": 160,
+        "eval_duration": 4588657000,
+        "wall_seconds": 5.716,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:47.446387-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "context-determines-meaning",
+        "attention-changes-the-question",
+        "attention-updates-meaning"
+      ]
+    },
+    {
+      "title": "Context Windows",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "A context window is the maximum amount of information, including messages and replies, a model can hold at once. Increasing the context window does not automatically improve performance and introduces costs and latency.",
+        "details": [
+          "The context window is the space where your messages and the model's replies share space.",
+          "Bigger context is not a free solution because it raises cost, increases latency, and may cause the model to miss or contradict important evidence.",
+          "The model only sees the active context and does not have durable memory of previous chats unless relevant information is deliberately resent.",
+          "System instructions and durable project files are better places for rules than long casual conversations because they survive compaction and new chats."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:53.647779Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6196623167,
+        "load_duration": 3922708,
+        "prompt_eval_count": 710,
+        "prompt_eval_cached_count": 104,
+        "prompt_eval_duration": 1746608000,
+        "eval_count": 153,
+        "eval_duration": 4398783000,
+        "wall_seconds": 6.198,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:53.647929-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "what-is-a-context-window",
+        "bigger-context-is-not-a-free-solution",
+        "context-rot-is-real",
+        "put-stable-rules-in-stable-places"
+      ]
+    },
+    {
+      "title": "Retrieval Augmented Generation",
+      "status": "generated",
+      "raw_model_output": {
+        "summary": "Retrieval Augmented Generation (RAG) grounds answers in evidence to reduce hallucinations and allows the use of private knowledge without retraining the model. It works by finding relevant information, providing it as context to the AI.",
+        "details": [
+          "RAG grounds answers in evidence, meaning the model answers from retrieved documents rather than memory, citing specific information from the source.",
+          "RAG uses private knowledge by retrieving and injecting it into the prompt, avoiding the need for fine-tuning or retraining the model.",
+          "How RAG works involves finding relevant information based on a question, which is then given to the AI as context.",
+          "Chunking splits long documents into smaller, useful passages to keep one idea and its context together before retrieval."
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:35:59.955202Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 6302167292,
+        "load_duration": 2469500,
+        "prompt_eval_count": 566,
+        "prompt_eval_cached_count": 104,
+        "prompt_eval_duration": 1363403000,
+        "eval_count": 161,
+        "eval_duration": 4913069000,
+        "wall_seconds": 6.304,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:38:59.95554-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      },
+      "sources": [
+        "why-rag-matters",
+        "building-a-tiny-rag-demo",
+        "chunking-useful-pieces",
+        "vector-databases-search-by-meaning"
+      ]
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "wall_seconds": 70.156,
+  "interaction_mode": "ingest",
+  "execution": "local",
+  "recorded_at": "20261005T183559.959490Z"
+}

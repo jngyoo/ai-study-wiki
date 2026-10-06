@@ -1,0 +1,54 @@
+[
+  {
+    "id": "q1",
+    "question": "Why can my friend not view my website when I send them a localhost link running on my computer?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class2"
+    ],
+    "expected_anchors": [
+      "localhost-is-for-testing-but-you-cant-share-it"
+    ],
+    "rubric": "localhost refers to the computer of the person opening the link. Cite the relevant Class 2 passage.",
+    "source_scope": [
+      "class2"
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "Each time I changed my model, I checked its score on the final test data and picked the settings with the highest score. Why can I not trust that evaluation, and which data should I use to choose settings?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class3"
+    ],
+    "expected_anchors": [
+      "keep-a-test-set-outside-development",
+      "separate-fitting-choosing-and-testing"
+    ],
+    "rubric": "Test scores must not guide development. Choose settings using validation data and keep final test data untouched until choices are fixed."
+  },
+  {
+    "id": "q3",
+    "question": "What is an embedding, and how does vector-search-based RAG use embeddings to find documents relevant to a question? Does this process retrain the answering model?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class4",
+      "class5"
+    ],
+    "expected_anchors": [
+      "the-problem-words-arent-numbers",
+      "distance-becomes-a-retrieval-primitive",
+      "building-a-tiny-rag-demo",
+      "vector-databases-search-by-meaning"
+    ],
+    "rubric": "Explain numerical vector representations, similarity search, retrieved passages entering context, and no weight retraining. Cite both Class 4 and Class 5."
+  },
+  {
+    "id": "q4",
+    "question": "What is the actual measured average response time, in seconds, of local Gemma searching these five lectures on my laptop?",
+    "expected_supported": false,
+    "expected_sources": [],
+    "expected_anchors": [],
+    "rubric": "The lectures contain no measured result for this user's laptop. Explicitly report insufficient evidence; do not guess a number."
+  }
+]

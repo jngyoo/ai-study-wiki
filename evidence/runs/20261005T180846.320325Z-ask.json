@@ -1,0 +1,224 @@
+{
+  "question": "Each time I changed my model, I checked its score on the final test data and picked the settings with the highest score. Why can I not trust that evaluation, and which data should I use to choose settings?",
+  "expanded_query": "each time changed model checked score final test data picked settings highest trust evaluation which should choose",
+  "retrieved": [
+    {
+      "id": "class3:keep-a-test-set-outside-development:1",
+      "source_id": "class3",
+      "path": "vault/raw/class3.html",
+      "title": "Keep a Test Set Outside Development",
+      "anchor": "keep-a-test-set-outside-development",
+      "passage": "Keep a Test Set Outside Development\n[Image description] Original illustration separating training data from an untouched test set\nIf we keep changing the model after seeing its test score, that score starts guiding development. Keep the final test set untouched until our choices are fixed.\nUse validation data to choose settings. The illustrated 80/20 split is only an example; the split should reflect future deployment.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html#/keep-a-test-set-outside-development",
+      "score": 26.54
+    },
+    {
+      "id": "class3:separate-fitting-choosing-and-testing:1",
+      "source_id": "class3",
+      "path": "vault/raw/class3.html",
+      "title": "Separate Fitting, Choosing, and Testing",
+      "anchor": "separate-fitting-choosing-and-testing",
+      "passage": "Separate Fitting, Choosing, and Testing\nTraining data |\nValidation data |\nTest data |\nFit weights or tree splits |\nChoose model, settings, threshold |\nEstimate final performance |\nCan be revisited during fitting |\nCan guide development |\nKeep untouched until choices are fixed |\nFor future predictions: train on older cases, validate on later ones, test on the newest held-out period.\nKeep related records together when necessary. The same person’s near-duplicate images in both sets can make the score misleading.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html#/separate-fitting-choosing-and-testing",
+      "score": 20.0499
+    },
+    {
+      "id": "class4:reading-model-leaderboards:1",
+      "source_id": "class4",
+      "path": "vault/raw/class4.html",
+      "title": "Reading Model LeaderboardsDeepSWEArtificial Analysis",
+      "anchor": "reading-model-leaderboards",
+      "passage": "Reading Model Leaderboards\nEach leaderboard tests a different slice of model performance.\nDeepSWE\n[Image description] DeepSWE version 1.1 leaderboard chart comparing coding-agent scores with average agent steps per task. The screenshot shows 113 tasks and multiple model configurations as of September 3, 2026.\nCoding agents: 113 original, long-horizon engineering tasks. Compare task score with cost, output tokens, or agent steps.\nArtificial Analysis\n[Image description] Artificial Analysis Intelligence Index bar chart comparing current models. Higher bars indicate a higher composite intelligence score.\nBroader model comparison: an Intelligence Index built from ten evaluations, with separate views of speed and cost.\nTip\nA leaderboard measures its test. The final comparison should use your own tasks and constraints.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html#/reading-model-leaderboards",
+      "score": 15.0058
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "model_output": {
+    "supported": true,
+    "answer": "If you change the model after seeing its test score, that score can guide development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+    "citations": [
+      "class3:keep-a-test-set-outside-development:1"
+    ]
+  },
+  "answer": {
+    "supported": true,
+    "answer": "If you change the model after seeing its test score, that score can guide development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+    "citations": [
+      "class3:keep-a-test-set-outside-development:1"
+    ]
+  },
+  "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T18:08:46.317215Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 2237403291,
+    "load_duration": 987125,
+    "prompt_eval_count": 959,
+    "prompt_eval_cached_count": 902,
+    "prompt_eval_duration": 215041000,
+    "eval_count": 107,
+    "eval_duration": 2014260000,
+    "wall_seconds": 5.627,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T11:11:46.317287-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "output": {
+        "supported": true,
+        "answer": "If you change the model after seeing its test score, that score can guide development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+        "citations": [
+          "class3:keep-a-test-set-outside-development:1",
+          "class3:separate-fitting-choosing-and-testing:1"
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:08:44.077755Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 3388316750,
+        "load_duration": 1112000,
+        "prompt_eval_count": 779,
+        "prompt_eval_cached_count": 266,
+        "prompt_eval_duration": 1024921000,
+        "eval_count": 124,
+        "eval_duration": 2348267000,
+        "wall_seconds": 3.389,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:11:44.077836-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    },
+    {
+      "output": {
+        "supported": true,
+        "answer": "If you change the model after seeing its test score, that score can guide development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+        "citations": [
+          "class3:keep-a-test-set-outside-development:1"
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:08:46.317215Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 2237403291,
+        "load_duration": 987125,
+        "prompt_eval_count": 959,
+        "prompt_eval_cached_count": 902,
+        "prompt_eval_duration": 215041000,
+        "eval_count": 107,
+        "eval_duration": 2014260000,
+        "wall_seconds": 2.238,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:11:46.317287-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "history_messages_sent": 0,
+  "interaction_mode": "ask",
+  "execution": "local",
+  "recorded_at": "20261005T180846.320325Z"
+}

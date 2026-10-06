@@ -1,0 +1,180 @@
+{
+  "question": "What is an embedding, and how does vector-search-based RAG use embeddings to find documents relevant to a question? Does this process retrain the answering model?",
+  "expanded_query": "embedding vector search based rag embeddings find documents relevant question process retrain answering model",
+  "retrieved": [
+    {
+      "id": "class5:building-a-tiny-rag-demo:1",
+      "source_id": "class5",
+      "path": "vault/raw/class5.html",
+      "title": "How RAG Works",
+      "anchor": "building-a-tiny-rag-demo",
+      "passage": "How RAG Works\nFind the relevant information, then give it to the AI with the question.\nA question starts the search.\nIllustrative animation, not a live AI call. Retrieval adds context; it does not retrain the model.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/building-a-tiny-rag-demo",
+      "score": 33.7757
+    },
+    {
+      "id": "class5:vector-databases-search-by-meaning:1",
+      "source_id": "class5",
+      "path": "vault/raw/class5.html",
+      "title": "Vector Databases & Vector Search",
+      "anchor": "vector-databases-search-by-meaning",
+      "passage": "Vector Databases & Vector Search\nA vector database stores numerical representations of your text, called embeddings.\nSimilar meanings sit close together.\nVector search finds chunks near the question.\nThe AI reads those chunks to answer.\n[Image description] Whiteboard meaning map inside a vector database. Saved document chunks form travel, food, and finance clusters. The question Where can I stay lands near travel chunks, including Hotels. Vector search selects nearby chunks and returns their text. Similar meanings sit close together.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/vector-databases-search-by-meaning",
+      "score": 21.1096
+    },
+    {
+      "id": "class4:bank-two-meanings:1",
+      "source_id": "class4",
+      "path": "vault/raw/class4.html",
+      "title": "Context Moves “Bank” in Embedding Space",
+      "anchor": "bank-two-meanings",
+      "passage": "Context Moves “Bank” in Embedding Space\n[Image description] Three-dimensional embedding space with a base bank vector in orange. Adding river as context shifts it to a blue river bank vector near river. Adding money as context shifts it to a teal money bank vector near the base bank vector and money. Solid arrows are embedding vectors from a common origin; dashed arrows show changes from added context.\nIllustrative 3D positions. + means adding context, not exact vector addition.",
+      "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html#/bank-two-meanings",
+      "score": 13.1472
+    }
+  ],
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "model_output": {
+    "supported": true,
+    "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for chunks near the question [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+    "citations": [
+      "class5:building-a-tiny-rag-demo:1",
+      "class5:vector-databases-search-by-meaning:1"
+    ]
+  },
+  "answer": {
+    "supported": true,
+    "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for chunks near the question [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+    "citations": [
+      "class5:building-a-tiny-rag-demo:1",
+      "class5:vector-databases-search-by-meaning:1"
+    ]
+  },
+  "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T18:08:51.133484Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 4781334916,
+    "load_duration": 1285916,
+    "prompt_eval_count": 654,
+    "prompt_eval_cached_count": 266,
+    "prompt_eval_duration": 758344000,
+    "eval_count": 158,
+    "eval_duration": 4000123000,
+    "wall_seconds": 4.787,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T11:11:51.13463-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "attempts": [
+    {
+      "output": {
+        "supported": true,
+        "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for chunks near the question [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+        "citations": [
+          "class5:building-a-tiny-rag-demo:1",
+          "class5:vector-databases-search-by-meaning:1"
+        ]
+      },
+      "usage": {
+        "model": "gemma4:e2b",
+        "created_at": "2026-10-05T18:08:51.133484Z",
+        "done": true,
+        "done_reason": "stop",
+        "total_duration": 4781334916,
+        "load_duration": 1285916,
+        "prompt_eval_count": 654,
+        "prompt_eval_cached_count": 266,
+        "prompt_eval_duration": 758344000,
+        "eval_count": 158,
+        "eval_duration": 4000123000,
+        "wall_seconds": 4.787,
+        "loaded_models": {
+          "models": [
+            {
+              "name": "gemma4:e2b",
+              "model": "gemma4:e2b",
+              "size": 1733023497,
+              "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+              "details": {
+                "parent_model": "",
+                "format": "gguf",
+                "family": "gemma4",
+                "families": [
+                  "gemma4"
+                ],
+                "parameter_size": "5.1B",
+                "quantization_level": "Q4_K_M"
+              },
+              "expires_at": "2026-10-05T11:11:51.13463-07:00",
+              "size_vram": 1733023497,
+              "context_length": 8192
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "history_messages_sent": 0,
+  "interaction_mode": "ask",
+  "execution": "local",
+  "recorded_at": "20261005T180851.143438Z"
+}

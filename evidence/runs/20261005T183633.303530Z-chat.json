@@ -1,0 +1,86 @@
+{
+  "message": "What can you help me with?",
+  "retrieval_used": false,
+  "retrieved": [],
+  "answer": "I can assist you with studying AI, programming, machine learning, and software topics. I can help brainstorm ideas, draft short texts, plan study sessions, and revise your previous responses. You can use the chat, ask, search, ingest, and help commands to interact with the material.",
+  "raw_model_output": "I can assist you with studying AI, programming, machine learning, and software topics. I can help brainstorm ideas, draft short texts, plan study sessions, and revise your previous responses. You can use the chat, ask, search, ingest, and help commands to interact with the material.",
+  "invalid_citations": [],
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T18:36:33.298222Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 3438608500,
+    "load_duration": 2590916,
+    "prompt_eval_count": 287,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 1193172000,
+    "eval_count": 59,
+    "eval_duration": 2204855000,
+    "wall_seconds": 3.444,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T11:39:33.298457-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "history_messages_sent": 0,
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "interaction_mode": "chat",
+  "execution": "local",
+  "recorded_at": "20261005T183633.303530Z"
+}

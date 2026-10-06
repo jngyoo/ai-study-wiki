@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+.env
+*.gguf
+*.safetensors
+vault/.obsidian/workspace*.json
+
+# Local editor recovery files
+*.swp
+*.swo

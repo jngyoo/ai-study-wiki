@@ -1,0 +1,86 @@
+{
+  "message": "Suggest a short three-item plan for this evening.",
+  "retrieval_used": false,
+  "retrieved": [],
+  "answer": "Suggestion:\n1. Review notes from today's session.\n2. Brainstorm a concept in machine learning.\n3. Draft a short explanation of a programming concept.",
+  "raw_model_output": "Suggestion:\n1. Review notes from today's session.\n2. Brainstorm a concept in machine learning.\n3. Draft a short explanation of a programming concept.",
+  "invalid_citations": [],
+  "usage": {
+    "model": "gemma4:e2b",
+    "created_at": "2026-10-05T18:07:47.65285Z",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 1021278750,
+    "load_duration": 596375,
+    "prompt_eval_count": 367,
+    "prompt_eval_cached_count": 282,
+    "prompt_eval_duration": 235168000,
+    "eval_count": 37,
+    "eval_duration": 781975000,
+    "wall_seconds": 1.026,
+    "loaded_models": {
+      "models": [
+        {
+          "name": "gemma4:e2b",
+          "model": "gemma4:e2b",
+          "size": 1733023497,
+          "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+          "details": {
+            "parent_model": "",
+            "format": "gguf",
+            "family": "gemma4",
+            "families": [
+              "gemma4"
+            ],
+            "parameter_size": "5.1B",
+            "quantization_level": "Q4_K_M"
+          },
+          "expires_at": "2026-10-05T11:10:47.653358-07:00",
+          "size_vram": 1733023497,
+          "context_length": 8192
+        }
+      ]
+    }
+  },
+  "history_messages_sent": 2,
+  "identity": {
+    "runtime": {
+      "version": "0.34.3"
+    },
+    "model": {
+      "name": "gemma4:e2b",
+      "model": "gemma4:e2b",
+      "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+      "size": 7162405886,
+      "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "gemma4",
+        "families": [
+          "gemma4"
+        ],
+        "parameter_size": "5.1B",
+        "quantization_level": "Q4_K_M",
+        "context_length": 131072,
+        "embedding_length": 1536
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "audio",
+        "tools",
+        "thinking"
+      ]
+    },
+    "settings": {
+      "base_url": "http://127.0.0.1:11434",
+      "model": "gemma4:e2b",
+      "num_ctx": 8192,
+      "temperature": 0.2
+    }
+  },
+  "interaction_mode": "chat",
+  "execution": "local",
+  "recorded_at": "20261005T180747.660674Z"
+}

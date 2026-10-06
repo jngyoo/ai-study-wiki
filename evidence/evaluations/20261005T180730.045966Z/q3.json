@@ -1,0 +1,153 @@
+{
+  "expectation": {
+    "id": "q3",
+    "question": "What is an embedding, and how does vector-search-based RAG use embeddings to find documents relevant to a question? Does this process retrain the answering model?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class4",
+      "class5"
+    ],
+    "expected_anchors": [
+      "the-problem-words-arent-numbers",
+      "distance-becomes-a-retrieval-primitive",
+      "building-a-tiny-rag-demo",
+      "vector-databases-search-by-meaning"
+    ],
+    "rubric": "Explain numerical vector representations, similarity search, retrieved passages entering context, and no weight retraining. Cite both Class 4 and Class 5."
+  },
+  "actual": {
+    "question": "What is an embedding, and how does vector-search-based RAG use embeddings to find documents relevant to a question? Does this process retrain the answering model?",
+    "expanded_query": "embedding vector search based rag embeddings find documents relevant question process retrain answering model",
+    "retrieved": [
+      {
+        "id": "class5:building-a-tiny-rag-demo:1",
+        "source_id": "class5",
+        "path": "vault/raw/class5.html",
+        "title": "How RAG Works",
+        "anchor": "building-a-tiny-rag-demo",
+        "passage": "How RAG Works\nFind the relevant information, then give it to the AI with the question.\nA question starts the search.\nIllustrative animation, not a live AI call. Retrieval adds context; it does not retrain the model.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/building-a-tiny-rag-demo",
+        "score": 33.7757
+      },
+      {
+        "id": "class5:vector-databases-search-by-meaning:1",
+        "source_id": "class5",
+        "path": "vault/raw/class5.html",
+        "title": "Vector Databases & Vector Search",
+        "anchor": "vector-databases-search-by-meaning",
+        "passage": "Vector Databases & Vector Search\nA vector database stores numerical representations of your text, called embeddings.\nSimilar meanings sit close together.\nVector search finds chunks near the question.\nThe AI reads those chunks to answer.\n[Image description] Whiteboard meaning map inside a vector database. Saved document chunks form travel, food, and finance clusters. The question Where can I stay lands near travel chunks, including Hotels. Vector search selects nearby chunks and returns their text. Similar meanings sit close together.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/vector-databases-search-by-meaning",
+        "score": 21.1096
+      },
+      {
+        "id": "class5:agenda:1",
+        "source_id": "class5",
+        "path": "vault/raw/class5.html",
+        "title": "Agenda",
+        "anchor": "agenda",
+        "passage": "Agenda\nRecap — LLMs predict tokens, probabilistically\nFine-tuning & RLHF — how a base model becomes an assistant, and what it costs\nPrompting — probability steering, failure modes, voice prompting\nBetter prompts: speak the context, include useful detail, and make a clear ask\nContext windows — LotR-sized memory, compaction, token economics\nPrompt engineering — .md files, system prompts, CLAUDE.md, the golden rule\nThinking models — when the model plans before it talks\nHallucination & RAG: grounding answers in evidence, with an animated pipeline\nSearch & tools: chunking, vector databases, SQL, and web search\nAssignment 4: Personal Wiki CLI: choose Gemma for your device, build your own RAG harness",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html#/agenda",
+        "score": 13.6996
+      }
+    ],
+    "identity": {
+      "runtime": {
+        "version": "0.34.3"
+      },
+      "model": {
+        "name": "gemma4:e2b",
+        "model": "gemma4:e2b",
+        "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+        "size": 7162405886,
+        "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma4",
+          "families": [
+            "gemma4"
+          ],
+          "parameter_size": "5.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 131072,
+          "embedding_length": 1536
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "audio",
+          "tools",
+          "thinking"
+        ]
+      },
+      "settings": {
+        "base_url": "http://127.0.0.1:11434",
+        "model": "gemma4:e2b",
+        "num_ctx": 8192,
+        "temperature": 0.2
+      }
+    },
+    "model_output": {
+      "supported": true,
+      "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for similar meanings [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+      "citations": [
+        "class5:building-a-tiny-rag-demo:1",
+        "class5:vector-databases-search-by-meaning:1"
+      ]
+    },
+    "answer": {
+      "supported": true,
+      "answer": "Embeddings are numerical representations of text stored in a vector database, where similar meanings are located close together [class5:vector-databases-search-by-meaning:1]. Vector-search-based RAG uses these embeddings to find document chunks near the question by searching for similar meanings [class5:vector-databases-search-by-meaning:1]. This process does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+      "citations": [
+        "class5:building-a-tiny-rag-demo:1",
+        "class5:vector-databases-search-by-meaning:1"
+      ]
+    },
+    "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+    "usage": {
+      "model": "gemma4:e2b",
+      "created_at": "2026-10-05T18:07:42.739252Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 4282087666,
+      "load_duration": 1770500,
+      "prompt_eval_count": 656,
+      "prompt_eval_cached_count": 216,
+      "prompt_eval_duration": 939052000,
+      "eval_count": 156,
+      "eval_duration": 3302240000,
+      "wall_seconds": 4.283,
+      "loaded_models": {
+        "models": [
+          {
+            "name": "gemma4:e2b",
+            "model": "gemma4:e2b",
+            "size": 1733023497,
+            "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma4",
+              "families": [
+                "gemma4"
+              ],
+              "parameter_size": "5.1B",
+              "quantization_level": "Q4_K_M"
+            },
+            "expires_at": "2026-10-05T11:10:42.739424-07:00",
+            "size_vram": 1733023497,
+            "context_length": 8192
+          }
+        ]
+      }
+    },
+    "history_messages_sent": 0,
+    "evidence_file": "evidence/runs/20261005T180742.742866Z-ask.json"
+  },
+  "mechanical_checks": {
+    "support_flag": true,
+    "expected_sources_cited": false,
+    "citation_ids_valid": true,
+    "no_chat_history": true
+  }
+}

@@ -1,0 +1,171 @@
+AI Study Wiki: disconnected-internet demonstration
+Each CLI command below starts a new process after Wi-Fi is disabled.
+network-before-tests: {"time_utc": "2026-10-05T22:55:22.087732+00:00", "wifi_power": "Wi-Fi Power (en0): Off", "active_network_interfaces": [], "external_connectivity_probes": [{"address": "1.1.1.1", "connected": false, "error": "[Errno 51] Network is unreachable"}, {"address": "8.8.8.8", "connected": false, "error": "[Errno 51] Network is unreachable"}]}
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py --help
+usage: wiki.py [-h] {help,doctor,ingest,search,ask,chat} ...
+
+AI Study Wiki — local Gemma + original-source retrieval. No cloud fallback.
+
+positional arguments:
+  {help,doctor,ingest,search,ask,chat}
+    help                Show usage
+    doctor              Inspect local model and settings
+    ingest              Index original sources and generate wiki notes with
+                        Gemma
+    search              Search original passages without a model call
+    ask                 Ask a standalone factual question without chat history
+    chat                Interactive assistant; use /notes question, /reset or
+                        /exit
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+Config: config/model.json. Sources: vault/raw. Logs: evidence/runs. Requires
+Python 3.9+, Ollama and gemma4:e2b.
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py doctor
+{
+  "runtime": {
+    "version": "0.34.3"
+  },
+  "model": {
+    "name": "gemma4:e2b",
+    "model": "gemma4:e2b",
+    "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+    "size": 7162405886,
+    "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "gemma4",
+      "families": [
+        "gemma4"
+      ],
+      "parameter_size": "5.1B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 1536
+    },
+    "capabilities": [
+      "completion",
+      "vision",
+      "audio",
+      "tools",
+      "thinking"
+    ]
+  },
+  "settings": {
+    "base_url": "http://127.0.0.1:11434",
+    "model": "gemma4:e2b",
+    "num_ctx": 8192,
+    "temperature": 0.2
+  }
+}
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py ingest vault/raw --force --only-source class2
+Generating with Gemma: Localhost and Deployment
+Generating with Gemma: APIs and Backends
+Sources: 5 sources, 413 passages. Evidence: evidence/runs/20261005T225537.323495Z-ingest.json
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py ingest vault/raw
+Unchanged: Programming Basics
+Unchanged: Debugging and Tests
+Unchanged: Localhost and Deployment
+Unchanged: APIs and Backends
+Unchanged: Model Training
+Unchanged: Model Evaluation
+Unchanged: Text Embeddings
+Unchanged: Attention and Context
+Unchanged: Context Windows
+Unchanged: Retrieval Augmented Generation
+Sources: 5 sources, 413 passages. Evidence: evidence/runs/20261005T225537.719273Z-ingest.json
+[exit 0]
+Re-ingestion preserves note paths and contents: True
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 evaluate.py
+q1: Why can my friend not view my website when I send them a localhost link running on my computer?
+A localhost link points to your own computer, so it cannot be viewed by others because the address points to their machine, not yours [class2:localhost-is-for-testing-but-you-cant-share-it:1].
+q2: Each time I changed my model, I checked its score on the final test data and picked the settings with the highest score. Why can I not trust that evaluation, and which data should I use to choose settings?
+If you keep changing the model after seeing its test score, that score starts guiding development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].
+q3: What is an embedding, and how does vector-search-based RAG use embeddings to find documents relevant to a question? Does this process retrain the answering model?
+An embedding represents a word as a vector, where nearby vectors capture related meanings; for example, the vectors for "dog" and "puppy" are close because they have related meanings [class4:distance-becomes-a-retrieval-primitive:1]. Vector-search-based RAG uses embeddings stored in a vector database to find document chunks that are near the question's meaning [class5:vector-databases-search-by-meaning:1]. This process adds context to the question and does not retrain the answering model [class5:building-a-tiny-rag-demo:1].
+q4: What is the actual measured average response time, in seconds, of local Gemma searching these five lectures on my laptop?
+The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.
+chat: I can assist you with studying AI, programming, machine learning, and software topics. I can help you brainstorm ideas, draft short texts, plan study sessions, and revise your previous responses. You can use the chat, ask, search, ingest, and help commands to interact with the material.
+chat: Suggestion:
+1. Review notes from today's session.
+2. Brainstorm a concept in machine learning.
+3. Draft a short explanation of a programming concept.
+chat: Review notes, brainstorm ML, and draft a concept explanation.
+EVALUATION_DIR=evidence/evaluations/20261005T225537.761668Z
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py chat
+Input supplied to the CLI:
+What can you help me with?
+Suggest a short three-item plan for this evening.
+Make that plan shorter.
+/exit
+
+chat · local · gemma4:e2b | /notes question · /reset · /exit
+You> Buddy> I can assist you with studying AI, programming, machine learning, and software topics. I can help brainstorm ideas, draft short texts, plan study sessions, and revise your previous responses. You can use the chat, ask, search, ingest, and help commands to interact with the material.
+Evidence: evidence/runs/20261005T225603.766866Z-chat.json
+You> Buddy> Suggestion:
+1. Review notes from today's session.
+2. Brainstorm a concept in machine learning.
+3. Draft a short explanation of a programming concept.
+Evidence: evidence/runs/20261005T225605.008865Z-chat.json
+You> Buddy> Review notes, brainstorm ML, and draft a concept explanation.
+Evidence: evidence/runs/20261005T225605.523404Z-chat.json
+You> [exit 0]
+
+$ ollama stop gemma4:e2b
+[?2026h[?25l[1G[K[?25h[?2026l[?25l[2K[1G[?25h[exit 0]
+
+$ ollama ps
+NAME    ID    SIZE    PROCESSOR    CONTEXT    UNTIL 
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 wiki.py search localhost --limit 2
+[class1:localhost-running-software-on-your-own-machine:1] vault/raw/class1.html / Localhost: Running Software on Your Own Machine
+Localhost: Running Software on Your Own Machine
+https://haas-ai-classes-fall-26.vercel.app/class1.html#/localhost-running-software-on-your-own-machine
+
+[class1:what-localhost-actually-means:1] vault/raw/class1.html / What localhost Actually Means
+What localhost Actually Means
+localhost is a name that always points back at the machine you are typing on. Its address is 127.0.0.1 — literally “this computer.”
+Your browser asks for http://localhost:8000
+The request never touches the internet — no DNS, no wifi, no cable
+It goes from your browser to another program on your own laptop, and comes straight back
+Note
+This is why localhost still works on a plane with no wifi. You are the customer and the restaurant.
+https://haas-ai-classes-fall-26.vercel.app/class1.html#/what-localhost-actually-means
+
+Evidence: evidence/runs/20261005T225605.770938Z-search.json
+[exit 0]
+
+$ /Library/Developer/CommandLineTools/usr/bin/python3 check_vault.py
+{'notes': 10, 'links_checked': 69, 'errors': []}
+[exit 0]
+network-after-tests: {"time_utc": "2026-10-05T22:56:05.849067+00:00", "wifi_power": "Wi-Fi Power (en0): On", "active_network_interfaces": ["Network interfaces: en0"], "external_connectivity_probes": [{"address": "1.1.1.1", "connected": true}, {"address": "8.8.8.8", "connected": true}]}
+
+FINAL RESULT
+{
+  "started_at": "20261005T225519.495121Z",
+  "status": "needs-review",
+  "original_wifi_state": "Wi-Fi Power (en0): On",
+  "reingestion_identical": true,
+  "note_count": 10,
+  "evaluation": "evidence/evaluations/20261005T225537.761668Z/summary.json",
+  "all_evaluation_checks_passed": true,
+  "disconnected_at_end": false,
+  "all_network_samples_disconnected": false,
+  "network_sample_count": 42,
+  "restore_command_exit": 0,
+  "wifi_after_restore": "Wi-Fi Power (en0): On",
+  "elapsed_seconds": 46.405
+}

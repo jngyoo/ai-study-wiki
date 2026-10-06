@@ -1,0 +1,274 @@
+[
+  {
+    "elapsed_seconds": 2.622,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 3.654,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 4.723,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 5.795,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 6.845,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 7.881,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 8.92,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 9.952,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 10.991,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 12.028,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 13.058,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 14.112,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 15.153,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 16.194,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 17.235,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 18.261,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 19.319,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 20.366,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 21.403,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 22.431,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 23.476,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 24.518,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 25.545,
+    "wifi_power": "Wi-Fi Power (en0): Off",
+    "active_interfaces": [],
+    "disconnected": true
+  },
+  {
+    "elapsed_seconds": 26.638,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 27.676,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 28.713,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 29.93,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 31.23,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 32.272,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 33.318,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 34.433,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 35.622,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 36.655,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 37.688,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 38.723,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 39.826,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 41.013,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 42.101,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 43.137,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 44.177,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 45.21,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  },
+  {
+    "elapsed_seconds": 46.233,
+    "wifi_power": "Wi-Fi Power (en0): On",
+    "active_interfaces": [
+      "Network interfaces: en0"
+    ],
+    "disconnected": false
+  }
+]

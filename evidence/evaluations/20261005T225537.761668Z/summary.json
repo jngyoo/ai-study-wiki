@@ -1,0 +1,80 @@
+{
+  "network_status": "Offline verification failed or incomplete; inspect network evidence.",
+  "questions": [
+    {
+      "id": "q1",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "A localhost link points to your own computer, so it cannot be viewed by others because the address points to their machine, not yours [class2:localhost-is-for-testing-but-you-cant-share-it:1].",
+        "citations": [
+          "class2:localhost-is-for-testing-but-you-cant-share-it:1"
+        ]
+      },
+      "seconds": 3.488
+    },
+    {
+      "id": "q2",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "If you keep changing the model after seeing its test score, that score starts guiding development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+        "citations": [
+          "class3:keep-a-test-set-outside-development:1"
+        ]
+      },
+      "seconds": 3.573
+    },
+    {
+      "id": "q3",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": true,
+        "answer": "An embedding represents a word as a vector, where nearby vectors capture related meanings; for example, the vectors for \"dog\" and \"puppy\" are close because they have related meanings [class4:distance-becomes-a-retrieval-primitive:1]. Vector-search-based RAG uses embeddings stored in a vector database to find document chunks that are near the question's meaning [class5:vector-databases-search-by-meaning:1]. This process adds context to the question and does not retrain the answering model [class5:building-a-tiny-rag-demo:1].",
+        "citations": [
+          "class4:distance-becomes-a-retrieval-primitive:1",
+          "class5:vector-databases-search-by-meaning:1",
+          "class5:building-a-tiny-rag-demo:1"
+        ]
+      },
+      "seconds": 6.558
+    },
+    {
+      "id": "q4",
+      "checks": {
+        "support_flag": true,
+        "expected_sources_cited": true,
+        "citation_ids_valid": true,
+        "no_chat_history": true
+      },
+      "answer": {
+        "supported": false,
+        "answer": "The provided source passages do not contain information about the actual measured average response time of local Gemma searching lectures on a laptop.",
+        "citations": []
+      },
+      "seconds": 2.345
+    }
+  ],
+  "mode_checks": {
+    "chat_no_forced_retrieval": true,
+    "followup_received_history": true,
+    "ask_ignores_chat_only_claim": true,
+    "search_cli_success": true
+  },
+  "offline_evidence": "evidence/offline/20261005T225519.494009Z"
+}

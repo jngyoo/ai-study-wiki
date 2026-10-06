@@ -1,0 +1,6 @@
+{
+  "base_url": "http://127.0.0.1:11434",
+  "model": "gemma4:e2b",
+  "num_ctx": 8192,
+  "temperature": 0.2
+}

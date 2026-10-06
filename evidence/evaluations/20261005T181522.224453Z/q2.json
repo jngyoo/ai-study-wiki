@@ -1,0 +1,196 @@
+{
+  "expectation": {
+    "id": "q2",
+    "question": "Each time I changed my model, I checked its score on the final test data and picked the settings with the highest score. Why can I not trust that evaluation, and which data should I use to choose settings?",
+    "expected_supported": true,
+    "expected_sources": [
+      "class3"
+    ],
+    "expected_anchors": [
+      "keep-a-test-set-outside-development",
+      "separate-fitting-choosing-and-testing"
+    ],
+    "rubric": "Test scores must not guide development. Choose settings using validation data and keep final test data untouched until choices are fixed."
+  },
+  "actual": {
+    "question": "Each time I changed my model, I checked its score on the final test data and picked the settings with the highest score. Why can I not trust that evaluation, and which data should I use to choose settings?",
+    "expanded_query": "each time changed model checked score final test data picked setting highest trust evaluation which should choose",
+    "retrieved": [
+      {
+        "id": "class3:keep-a-test-set-outside-development:1",
+        "source_id": "class3",
+        "path": "vault/raw/class3.html",
+        "title": "Keep a Test Set Outside Development",
+        "anchor": "keep-a-test-set-outside-development",
+        "passage": "Keep a Test Set Outside Development\n[Image description] Original illustration separating training data from an untouched test set\nIf we keep changing the model after seeing its test score, that score starts guiding development. Keep the final test set untouched until our choices are fixed.\nUse validation data to choose settings. The illustrated 80/20 split is only an example; the split should reflect future deployment.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html#/keep-a-test-set-outside-development",
+        "score": 24.5605
+      },
+      {
+        "id": "class3:cross-validation-rotates-the-held-out-fold:1",
+        "source_id": "class3",
+        "path": "vault/raw/class3.html",
+        "title": "Cross-Validation Rotates the Held-Out Fold",
+        "anchor": "cross-validation-rotates-the-held-out-fold",
+        "passage": "Cross-Validation Rotates the Held-Out Fold\n[Image description] Five rounds each hold out a different fold, then summarize validation scores\nTrain on four folds; validate on the fifth. Rotate and compare the average and spread.\nUse these scores to choose settings. Keep a separate final test set. Use time-aware or group-aware folds when rows are related.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html#/cross-validation-rotates-the-held-out-fold",
+        "score": 20.3637
+      },
+      {
+        "id": "class4:reading-model-leaderboards:1",
+        "source_id": "class4",
+        "path": "vault/raw/class4.html",
+        "title": "Reading Model LeaderboardsDeepSWEArtificial Analysis",
+        "anchor": "reading-model-leaderboards",
+        "passage": "Reading Model Leaderboards\nEach leaderboard tests a different slice of model performance.\nDeepSWE\n[Image description] DeepSWE version 1.1 leaderboard chart comparing coding-agent scores with average agent steps per task. The screenshot shows 113 tasks and multiple model configurations as of September 3, 2026.\nCoding agents: 113 original, long-horizon engineering tasks. Compare task score with cost, output tokens, or agent steps.\nArtificial Analysis\n[Image description] Artificial Analysis Intelligence Index bar chart comparing current models. Higher bars indicate a higher composite intelligence score.\nBroader model comparison: an Intelligence Index built from ten evaluations, with separate views of speed and cost.\nTip\nA leaderboard measures its test. The final comparison should use your own tasks and constraints.",
+        "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html#/reading-model-leaderboards",
+        "score": 18.3629
+      }
+    ],
+    "identity": {
+      "runtime": {
+        "version": "0.34.3"
+      },
+      "model": {
+        "name": "gemma4:e2b",
+        "model": "gemma4:e2b",
+        "modified_at": "2026-09-22T17:17:45.696588577-07:00",
+        "size": 7162405886,
+        "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "gemma4",
+          "families": [
+            "gemma4"
+          ],
+          "parameter_size": "5.1B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 131072,
+          "embedding_length": 1536
+        },
+        "capabilities": [
+          "completion",
+          "vision",
+          "audio",
+          "tools",
+          "thinking"
+        ]
+      },
+      "settings": {
+        "base_url": "http://127.0.0.1:11434",
+        "model": "gemma4:e2b",
+        "num_ctx": 8192,
+        "temperature": 0.2
+      }
+    },
+    "model_output": {
+      "supported": true,
+      "answer": "If you keep changing the model after seeing its test score, that score starts guiding development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+      "citations": [
+        "class3:keep-a-test-set-outside-development:1"
+      ]
+    },
+    "answer": {
+      "supported": true,
+      "answer": "If you keep changing the model after seeing its test score, that score starts guiding development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+      "citations": [
+        "class3:keep-a-test-set-outside-development:1"
+      ]
+    },
+    "citation_check": "All cited IDs belong to retrieved original passages. Semantic support requires review.",
+    "usage": {
+      "model": "gemma4:e2b",
+      "created_at": "2026-10-05T18:15:35.566312Z",
+      "done": true,
+      "done_reason": "stop",
+      "total_duration": 3932664167,
+      "load_duration": 5311959,
+      "prompt_eval_count": 753,
+      "prompt_eval_cached_count": 266,
+      "prompt_eval_duration": 1171676000,
+      "eval_count": 108,
+      "eval_duration": 2721757000,
+      "wall_seconds": 3.936,
+      "loaded_models": {
+        "models": [
+          {
+            "name": "gemma4:e2b",
+            "model": "gemma4:e2b",
+            "size": 1733023497,
+            "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+            "details": {
+              "parent_model": "",
+              "format": "gguf",
+              "family": "gemma4",
+              "families": [
+                "gemma4"
+              ],
+              "parameter_size": "5.1B",
+              "quantization_level": "Q4_K_M"
+            },
+            "expires_at": "2026-10-05T11:18:35.566919-07:00",
+            "size_vram": 1733023497,
+            "context_length": 8192
+          }
+        ]
+      }
+    },
+    "attempts": [
+      {
+        "output": {
+          "supported": true,
+          "answer": "If you keep changing the model after seeing its test score, that score starts guiding development, so the final test set should be kept untouched until your choices are fixed [class3:keep-a-test-set-outside-development:1]. You should use validation data to choose settings [class3:keep-a-test-set-outside-development:1].",
+          "citations": [
+            "class3:keep-a-test-set-outside-development:1"
+          ]
+        },
+        "usage": {
+          "model": "gemma4:e2b",
+          "created_at": "2026-10-05T18:15:35.566312Z",
+          "done": true,
+          "done_reason": "stop",
+          "total_duration": 3932664167,
+          "load_duration": 5311959,
+          "prompt_eval_count": 753,
+          "prompt_eval_cached_count": 266,
+          "prompt_eval_duration": 1171676000,
+          "eval_count": 108,
+          "eval_duration": 2721757000,
+          "wall_seconds": 3.936,
+          "loaded_models": {
+            "models": [
+              {
+                "name": "gemma4:e2b",
+                "model": "gemma4:e2b",
+                "size": 1733023497,
+                "digest": "7fbdbf8f5e45a75bb122155ed546e765b4d9c53a1285f62fd9f506baa1c5a47e",
+                "details": {
+                  "parent_model": "",
+                  "format": "gguf",
+                  "family": "gemma4",
+                  "families": [
+                    "gemma4"
+                  ],
+                  "parameter_size": "5.1B",
+                  "quantization_level": "Q4_K_M"
+                },
+                "expires_at": "2026-10-05T11:18:35.566919-07:00",
+                "size_vram": 1733023497,
+                "context_length": 8192
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "history_messages_sent": 0,
+    "evidence_file": "evidence/runs/20261005T181535.575698Z-ask.json"
+  },
+  "mechanical_checks": {
+    "support_flag": true,
+    "expected_sources_cited": true,
+    "citation_ids_valid": true,
+    "no_chat_history": true
+  }
+}

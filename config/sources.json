@@ -1,0 +1,7 @@
+{
+  "class1": {"title": "Class 1 — Code & Programming Foundations", "url": "https://haas-ai-classes-fall-26.vercel.app/class1.html"},
+  "class2": {"title": "Class 2 — Software Systems", "url": "https://haas-ai-classes-fall-26.vercel.app/class2.html"},
+  "class3": {"title": "Class 3 — Machine Learning Foundations", "url": "https://haas-ai-classes-fall-26.vercel.app/class3.html"},
+  "class4": {"title": "Class 4 — Deep Learning, Embeddings & Transformers", "url": "https://haas-ai-classes-fall-26.vercel.app/class4.html"},
+  "class5": {"title": "Class 5 — LLM Behavior, Prompting & Retrieval", "url": "https://haas-ai-classes-fall-26.vercel.app/class5.html"}
+}
