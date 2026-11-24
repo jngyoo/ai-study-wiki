@@ -58,7 +58,7 @@ def main():
             history = []
             while True:
                 try:
-                    message = args.message or input('You> ').strip()
+                    message = (args.message if args.message is not None else input('You> ')).strip()
                 except EOFError:
                     break
                 if message == '/exit':
@@ -66,13 +66,11 @@ def main():
                 if message == '/reset':
                     history.clear()
                     print('Conversation history cleared.')
-                    continue
-                if not message:
-                    continue
-                r = chat_turn(message, history)
-                print('Buddy> ' + r['answer'])
-                print('Evidence: ' + r['evidence_file'])
-                if args.message:
+                elif message:
+                    r = chat_turn(message, history)
+                    print('Buddy> ' + r['answer'])
+                    print('Evidence: ' + r['evidence_file'])
+                if args.message is not None:
                     break
     except (RuntimeError, ValueError, OSError, KeyError) as exc:
         print('Error: ' + str(exc), file=sys.stderr)
